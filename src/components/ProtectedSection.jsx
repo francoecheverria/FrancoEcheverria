@@ -17,12 +17,17 @@ const ProtectedSection = () => {
   };
 
   return (
-    <div className="p-6">
-      <div className="flex flex-col items-center justify-center bg-[#1E1B47] text-white">
+    <div className="p-6 w-200">
+      <div className="p-4 flex flex-col items-center justify-center rounded-lg bg-[#1E1B47] text-white">
         {isAuthenticated ? (
-          <h1 className="text-4xl font-bold text-center">
-            Franco Echeverria es de Valentina ❤️
-          </h1>
+          <>
+            <h1 className="text-4xl font-bold text-center text-[#F8E9A1] leading-relaxed mb-4">
+              Franco Echeverria es de la mujer mas hermosa de la Argentina, Valentina godoy. 💖
+            </h1>
+            <p className="text-xl text-center text-[#F8E9A1]">
+              Esa morocha linda, de ojos negros hermosos me tiene loco. ❤️
+            </p>
+          </>
         ) : (
           <form
             onSubmit={handlePasswordSubmit}
