@@ -1,0 +1,18 @@
+Tunel SSH:
+
+ssh -p 5334 -L 5434:localhost:5432 root@149.50.137.83
+
+Host:
+vps-4195654-x.dattaweb.com 
+
+IP:
+149.50.137.83 
+
+Usuario:
+root 
+
+Contraseña:
+6fMQ47q8uRBR
+
+Puerto:
+5334 

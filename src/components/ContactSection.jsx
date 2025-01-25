@@ -4,7 +4,7 @@ import { CiMail } from 'react-icons/ci';
 
 const ContactSection = () => (
   <div className="p-6">
-    <h2 className="text-3xl font-bold text-[#22D3EE]  mb-8">CONTACTAME</h2>
+    <h2 className="text-3xl font-bold text-[#22D3EE] mb-8">CONTACTAME</h2>
 
     <p className="text-lg text-gray-300 mb-8">Si te gustaría trabajar conmigo o hacerme alguna consulta, ¡no dudes en contactarme a través de cualquiera de los siguientes medios!</p>
 

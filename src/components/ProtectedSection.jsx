@@ -7,7 +7,6 @@ const ProtectedSection = () => {
   const handlePasswordSubmit = (e) => {
     e.preventDefault();
 
-    // Cambia la contraseña aquí
     const correctPassword = "valentina";
     if (password === correctPassword) {
       setIsAuthenticated(true);

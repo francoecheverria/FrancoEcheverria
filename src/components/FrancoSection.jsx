@@ -3,18 +3,18 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const FrancoSection = () => (
   <div className="p-6 flex flex-col items-center md:items-start space-y-6">
-    <h1 className="text-4xl md:text-5xl font-extrabold text-center md:text-left">
+    <h1 className="text-4xl md:text-5xl font-extrabold md:text-left">
       <span className="text-[#D946EF]">FRANCO</span> <span className="text-[#22D3EE]">ECHEVERRIA</span>
     </h1>
-    <p className="text-yellow-300 mt-2 text-lg text-center md:text-left">
+    <p className="text-yellow-300 mt-2 text-lg md:text-left">
       Creciendo como desarrollador.
     </p>
 
-    <p className="mt-6 text-center md:text-left text-xl font-medium text-gray-400">
+    <p className="mt-6 md:text-left text-xl font-medium text-gray-400">
       BIENVENIDOS A MI PORTAFOLIO COMO DESARROLLADOR WEB.
     </p>
 
-    <div className="mt-4 text-center md:text-left text-base text-gray-400 leading-relaxed space-y-2">
+    <div className="mt-4 md:text-left text-base text-gray-400 leading-relaxed space-y-2">
       <p>
         Soy desarrollador PHP con 5 años de experiencia profesional, apasionado por crear soluciones
         robustas y eficientes.
@@ -27,7 +27,7 @@ const FrancoSection = () => (
       </p>
     </div>
 
-    <div className="mt-8 text-center md:text-left text-base text-gray-400 leading-relaxed space-y-4">
+    <div className="mt-8 md:text-left text-base text-gray-400 leading-relaxed space-y-4">
       <div>
         <h2 className="text-xl font-bold text-[#22D3EE]">Habilidades principales:</h2>
         <ul className="mt-2 list-disc list-inside space-y-2">
@@ -68,8 +68,8 @@ const FrancoSection = () => (
       </div>
     </div>
 
-    <div className="mt-8 text-center md:text-left text-base text-gray-400 leading-relaxed space-y-4">
-      <p className="mt-4 text-center md:text-left text-base text-gray-400 leading-relaxed">
+    <div className="mt-8 md:text-left text-base text-gray-400 leading-relaxed space-y-4">
+      <p className="mt-4 md:text-left text-base text-gray-400 leading-relaxed">
         Si quieres ponerte en contacto conmigo, escríbeme a{' '}
         <a
           href="mailto:francoecheverria2000@gmail.com"

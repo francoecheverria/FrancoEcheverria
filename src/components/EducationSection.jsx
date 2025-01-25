@@ -5,7 +5,6 @@ const EducationSection = () => (
     <h2 className="text-3xl font-bold text-[#22D3EE]">EDUCACIÓN</h2>
 
     <div className="mt-8">
-      {/* Carreras de Grado */}
       <SectionTitle title="Carreras de Grado" />
       <div className="space-y-6">
         <EducationCard
@@ -27,7 +26,6 @@ const EducationSection = () => (
     </div>
 
     <div className="mt-8">
-      {/* Cursos y Capacitaciones */}
       <SectionTitle title="Cursos y Capacitaciones" />
       <div className="space-y-6">
         <EducationCard
@@ -40,12 +38,10 @@ const EducationSection = () => (
   </div>
 );
 
-// Subcomponente para los títulos de las secciones
 const SectionTitle = ({ title }) => (
   <h3 className="text-2xl font-bold text-[#22D3EE] mb-4">{title}</h3>
 );
 
-// Subcomponente para mostrar cada elemento de educación
 const EducationCard = ({ title, description, date }) => (
   <div className="mb-6">
     <h4 className="text-xl font-semibold text-yellow-300">{title}</h4>

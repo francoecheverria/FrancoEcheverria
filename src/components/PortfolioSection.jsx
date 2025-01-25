@@ -25,7 +25,7 @@ const projects = [
     imgSrc: './img/cuentasexactas.png'
   },
   {
-    name: 'TennisTournament',
+    name: 'Tennis Tournament',
     description: 'Simulador de torneo de tenis de equipos femeninos o masculinos.',
     technologies: [
       { name: 'LARAVEL', color: '#fa342d' },
@@ -64,12 +64,17 @@ const ProjectCard = () => {
               <h2 className="text-lg font-bold text-yellow-300">{project.name}</h2>
               <p className="text-sm text-gray-300 mt-2">{project.description}</p>
 
-              <div className="flex justify-center items-center gap-2 mt-4">
+              <div className="flex flex-wrap justify-center items-center gap-2 mt-4 rounded-full">
                 {project.technologies.map((tech, idx) => (
                   <span
                     key={idx}
                     className="text-xs font-bold px-2 py-1 rounded-full"
-                    style={{ backgroundColor: tech.color, color: tech.color === '#fa342d' || tech.color === '#316191' ? 'white' : 'black' }}
+                    style={{
+                      backgroundColor: tech.color,
+                      color: tech.color === '#fa342d' || tech.color === '#316191' ? 'white' : 'black'
+                    }}
+                    // En pantallas pequeñas (mobile), se apilan de a dos
+                    className="sm:flex-1 sm:max-w-[calc(50%-0.5rem)] text-xs font-bold px-2 py-1 rounded-full"
                   >
                     {tech.name}
                   </span>
