@@ -33,7 +33,8 @@ const App = () => {
 
   return (
     <Router>
-      <div className="flex h-screen">
+      {/* Contenedor principal de la app */}
+      <div className="flex min-h-screen bg-[#242424] text-[#95b7e8]">
         {/* Barra lateral */}
         <aside className="bg-[#1E1B47] text-[#95b7e8] min-h-screen flex flex-col items-center py-8 w-60">
           <img
@@ -46,11 +47,10 @@ const App = () => {
               <button
                 key={key}
                 onClick={() => setActiveSection(key)}
-                className={`bg-transparent block w-full text-left px-4 py-2 rounded-lg ${
-                  activeSection === key
+                className={`bg-transparent block w-full text-left px-4 py-2 rounded-lg border-[transparent] text-base font-medium cursor-pointer transition-all duration-200 ${activeSection === key
                     ? 'text-[#22D3EE]'
-                    : 'text-[#D946EF] hover:text-[#22D3EE]'
-                }`}
+                    : 'text-[#D946EF] hover:text-[#22D3EE] hover:border hover:border-[#22D3EE]'
+                  }`}
               >
                 {key.toUpperCase()}
               </button>
@@ -59,14 +59,14 @@ const App = () => {
         </aside>
 
         {/* Sección principal */}
-        <main className="bg-[#12103B] text-[#95b7e8] p-8 w-1000">
+        <main className="flex-1 p-8 bg-[#12103B]">
           <MainContent />
         </main>
       </div>
 
       {/* Configuración de rutas */}
       <Routes>
-        <Route path="/protected"/>
+        <Route path="/protected" />
         {/* Redirigir al inicio si no se encuentra una ruta */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

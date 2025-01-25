@@ -5,78 +5,66 @@ import { RiTailwindCssFill, RiPhpFill } from "react-icons/ri";
 import { DiScrum, DiMysql } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 
-const SkillsSection = () => (
-    <div className="p-6 ">
+const SkillSection = () => (
+    <div className="p-6">
 
         <h2 className="text-3xl font-bold text-[#22D3EE]">SKILLS</h2>
+        
         <div className="mt-8 space-y-8">
+            {/* Lenguajes de Programación */}
             <div>
                 <h3 className="text-2xl font-bold text-blue-300 mb-4">Lenguajes de Programación</h3>
                 <div className="flex flex-wrap gap-4">
-                    <div className="flex items-center gap-2 bg-[#797db5] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <RiPhpFill size={20} /> PHP
-                    </div>
-                    <div className="flex items-center gap-2 bg-[#f7e119] text-black text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <IoLogoJavascript size={20} /> JavaScript
-                    </div>
+                    <SkillTag icon={<RiPhpFill size={20} />} name="PHP" color="#797db5" />
+                    <SkillTag icon={<IoLogoJavascript size={20} />} name="JavaScript" color="#f7e119" textColor="black" />
                 </div>
             </div>
 
+            {/* Frameworks */}
             <div>
                 <h3 className="text-2xl font-bold text-blue-300 mb-4">Frameworks</h3>
                 <div className="flex flex-wrap gap-4">
-                    <div className="flex items-center gap-2 bg-[#fa342d] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <FaLaravel size={20} /> Laravel
-                    </div>
-                    <div className="flex items-center gap-2 bg-cyan-500 text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <FaReact size={20} /> React
-                    </div>
-                    <div className="flex items-center gap-2 bg-[#212121] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <FaSymfony size={20} /> Symfony
-                    </div>
+                    <SkillTag icon={<FaLaravel size={20} />} name="Laravel" color="#fa342d" />
+                    <SkillTag icon={<FaReact size={20} />} name="React" color="#00d8ff" />
+                    <SkillTag icon={<FaSymfony size={20} />} name="Symfony" color="#212121" />
                 </div>
             </div>
 
+            {/* Herramientas y Metodologías */}
             <div>
                 <h3 className="text-2xl font-bold text-blue-300 mb-4">Herramientas y Metodologías</h3>
                 <div className="flex flex-wrap gap-4">
-                    <div className="flex items-center gap-2 bg-[#222a36] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <FaGithub size={20} /> GitHub
-                    </div>
-                    <div className="flex items-center gap-2 bg-[#e0b400] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <FaLinux size={20} /> Linux
-                    </div>
-                    <div className="flex items-center gap-2 bg-[#5b94ba] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <DiScrum size={20} /> Scrum
-                    </div>
+                    <SkillTag icon={<FaGithub size={20} />} name="GitHub" color="#222a36" />
+                    <SkillTag icon={<FaLinux size={20} />} name="Linux" color="#e0b400" />
+                    <SkillTag icon={<DiScrum size={20} />} name="Scrum" color="#5b94ba" />
                 </div>
             </div>
 
+            {/* Bases de Datos */}
             <div>
                 <h3 className="text-2xl font-bold text-blue-300 mb-4">Bases de Datos</h3>
                 <div className="flex flex-wrap gap-4">
-                    <div className="flex items-center gap-2 bg-[#316191] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <BiLogoPostgresql size={20} /> PostgreSQL
-                    </div>
-                    <div className="flex items-center gap-2 bg-[#00628c] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <DiMysql size={20} /> MySQL
-                    </div>
+                    <SkillTag icon={<BiLogoPostgresql size={20} />} name="PostgreSQL" color="#316191" />
+                    <SkillTag icon={<DiMysql size={20} />} name="MySQL" color="#00628c" />
                 </div>
             </div>
 
+            {/* Maquetación Web */}
             <div>
                 <h3 className="text-2xl font-bold text-blue-300 mb-4">Maquetación Web</h3>
                 <div className="flex flex-wrap gap-4">
-                    <div className="flex items-center gap-2 bg-[#02afb8] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <RiTailwindCssFill size={20} /> TailwindCSS
-                    </div>
-                    <div className="flex items-center gap-2 bg-[#7d11f7] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
-                        <FaBootstrap size={20} /> Bootstrap
-                    </div>
+                    <SkillTag icon={<RiTailwindCssFill size={20} />} name="TailwindCSS" color="#02afb8" />
+                    <SkillTag icon={<FaBootstrap size={20} />} name="Bootstrap" color="#7d11f7" />
                 </div>
             </div>
         </div>
     </div>
 );
 
-export default SkillsSection;
+const SkillTag = ({ icon, name, color, textColor = "white" }) => (
+    <div className={`flex items-center gap-2 ${textColor === "black" ? 'text-black' : 'text-white'} text-sm font-bold px-3 py-2 rounded-full shadow-md`} style={{ backgroundColor: color }}>
+        {icon} {name}
+    </div>
+);
+
+export default SkillSection;
