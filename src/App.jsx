@@ -37,25 +37,26 @@ const App = () => {
 
         {/* Sidebar */}
         <aside
-          className={`bg-[#1E1B47] text-[#95b7e8] min-h-screen flex flex-col items-center py-8 transition-all duration-300 ${isSidebarVisible ? 'w-60' : 'w-20'}`}
+          className={`bg-[#1E1B47] text-[#95b7e8] min-h-screen flex flex-col items-center py-2 transition-all duration-300 ${isSidebarVisible ? 'w-60' : 'w-20'}`}
         >
 
           {/* Sidebar toggle button */}
-          <div>
+          <div className="flex justify-start items-start w-full px-4 pt-4">
             <button
               onClick={() => setIsSidebarVisible(!isSidebarVisible)}
-              className="text-[#D946EF] p-3 transition-all duration-200 hover:text-[#22D3EE] mb-8"
+              className="text-[#D946EF] p-3 transition-all duration-200 hover:text-[#22D3EE] mb-8 text-2xl"
             >
-              <span className="text-lg">☰</span>
+              <span className="text-3xl">☰</span>
             </button>
           </div>
+
 
           {/* Profile Image */}
           <div className={`${isSidebarVisible ? 'block' : 'hidden'}`}>
             <img
               src="https://avatars.githubusercontent.com/u/97467210?s=400&u=795e3acab48e41cb3c644b9151b099c13f089820&v=4"
               alt="Perfil"
-              className="rounded-full w-52 h-52 border-4 border-[#D946EF] mb-4"
+              className="rounded-full border-4 border-[#D946EF] mb-4 w-24 h-24 sm:w-52 sm:h-52"  // Adjusted for smaller screen size
             />
           </div>
 

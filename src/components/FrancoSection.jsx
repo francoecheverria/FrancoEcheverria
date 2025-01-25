@@ -83,8 +83,8 @@ const FrancoSection = () => (
     <a
       href="/docs/CV-Franco-Echeverria.pdf"
       download="CV-Franco-Echeverria.pdf"
-      className="mt-6 px-6 py-2 text-[#D946EF] font-bold rounded-lg border-transparent transition-colors duration-200 
-             hover:bg-[#1E1B47] hover:text-[#22D3EE] hover:border hover:border-[#22D3EE]"
+      className="mt-6 px-6 py-2 text-[#D946EF] font-bold rounded-lg border-[#D946EF] transition-colors duration-200 
+             hover:bg-[#1E1B47] hover:text-[#22D3EE] hover:border hover:border-[#22D3EE] "
     >
       Descarga mi CV
     </a>
