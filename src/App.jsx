@@ -6,6 +6,7 @@ import PortfolioSection from './components/PortfolioSection';
 import EducationSection from './components/EducationSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
+import ProtectedSection from './components/ProtectedSection';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('Franco');
@@ -16,6 +17,7 @@ const App = () => {
     skills: <SkillsSection />,
     educacion: <EducationSection />,
     contacto: <ContactSection />,
+    protected: <ProtectedSection />, // Nueva sección
   };
 
   return (
