@@ -48,7 +48,19 @@ const projects = [
     link: 'https://space-explorer-alnitakode.vercel.app/',
     gitHub: 'https://github.com/francoecheverria/Space-Explorer',
     imgSrc: './img/SpaceExplorer.png'
+  },
+  {
+    name: 'Airport Puzzle',
+    description: 'Puzzle basado en ordenar equipaje de aeropuertos.',
+    technologies: [
+      { name: 'REACT', color: '#61dafb' },
+      { name: 'TAILWIND', color: '#02afb8' }
+    ],
+    link: 'http://alnitakode.com/',
+    gitHub: 'https://github.com/francoecheverria/airport-puzzle',
+    imgSrc: './img/enDesarrollo.png'
   }
+  
 ];
 
 const ProjectCard = () => {
