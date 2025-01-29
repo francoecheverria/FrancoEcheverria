@@ -23,7 +23,7 @@ const projects = [
       { name: 'LARAVEL', color: '#fa342d' },
       { name: 'PGSQL', color: '#316191' }
     ],
-    link: 'https://cuentasexactas.com/',
+    link: 'https://alnitakode.store/',
     gitHub: 'https://github.com/francoecheverria/metricas-PageSpeed',
     imgSrc: './img/Metricas-PageSpeed.png'
   },
@@ -34,7 +34,7 @@ const projects = [
       { name: 'LARAVEL', color: '#fa342d' },
       { name: 'PGSQL', color: '#316191' }
     ],
-    link: 'https://cuentasexactas.com/',
+    link: 'http://alnitakode.online/',
     gitHub: 'https://github.com/francoecheverria/tennisTournament',
     imgSrc: './img/tennisTournament.png'
   },
