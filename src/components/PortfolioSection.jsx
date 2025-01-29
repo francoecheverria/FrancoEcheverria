@@ -45,8 +45,8 @@ const projects = [
       { name: 'REACT', color: '#61dafb' },
       { name: 'TAILWIND', color: '#02afb8' }
     ],
-    link: 'https://linterna-amor.vercel.app/',
-    gitHub: 'https://github.com/francoecheverria/linterna-juego',
+    link: 'https://space-explorer-alnitakode.vercel.app/',
+    gitHub: 'https://github.com/francoecheverria/Space-Explorer',
     imgSrc: './img/SpaceExplorer.png'
   }
 ];
