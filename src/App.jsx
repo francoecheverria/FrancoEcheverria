@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import './index.css';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { FaHome, FaBriefcase, FaGraduationCap, FaLaptopCode, FaPhone } from 'react-icons/fa'; // Icons
 
 import FrancoSection from './components/FrancoSection';
@@ -13,6 +13,17 @@ import ProtectedSection from './components/ProtectedSection';
 const App = () => {
   const [activeSection, setActiveSection] = useState('Franco');
   const [isSidebarVisible, setIsSidebarVisible] = useState(true); // State to toggle sidebar
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSidebarVisible(window.innerWidth >= 768);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const sections = {
     Franco: <FrancoSection />,

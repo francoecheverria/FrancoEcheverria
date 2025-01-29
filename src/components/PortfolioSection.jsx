@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoIosGlobe } from 'react-icons/io';
+import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
@@ -12,6 +13,7 @@ const projects = [
       { name: 'TAILWIND', color: '#02afb8' }
     ],
     link: 'https://cuentasexactas.com/',
+    gitHub: 'https://github.com/francoecheverria/CuentasExactas',
     imgSrc: './img/cuentasexactas.png'
   },
   {
@@ -22,7 +24,8 @@ const projects = [
       { name: 'PGSQL', color: '#316191' }
     ],
     link: 'https://cuentasexactas.com/',
-    imgSrc: './img/cuentasexactas.png'
+    gitHub: 'https://github.com/francoecheverria/metricas-PageSpeed',
+    imgSrc: './img/Metricas-PageSpeed.png'
   },
   {
     name: 'Tennis Tournament',
@@ -32,7 +35,8 @@ const projects = [
       { name: 'PGSQL', color: '#316191' }
     ],
     link: 'https://cuentasexactas.com/',
-    imgSrc: './img/cuentasexactas.png'
+    gitHub: 'https://github.com/francoecheverria/tennisTournament',
+    imgSrc: './img/tennisTournament.png'
   },
   {
     name: 'Space Explorer',
@@ -41,8 +45,9 @@ const projects = [
       { name: 'REACT', color: '#61dafb' },
       { name: 'TAILWIND', color: '#02afb8' }
     ],
-    link: 'https://cuentasexactas.com/',
-    imgSrc: './img/cuentasexactas.png'
+    link: 'https://linterna-amor.vercel.app/',
+    gitHub: 'https://github.com/francoecheverria/linterna-juego',
+    imgSrc: './img/SpaceExplorer.png'
   }
 ];
 
@@ -85,6 +90,11 @@ const ProjectCard = () => {
                 <a href={project.link} className="hover:text-pink-500 transition" title="Website">
                   <div className="flex items-center gap-2 bg-[#027dc4] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
                     <IoIosGlobe size={24} />
+                  </div>
+                </a>
+                <a href={project.gitHub} className="hover:text-pink-500 transition" title="Website">
+                  <div className="flex items-center gap-2 bg-[#222a36] text-white text-sm font-bold px-3 py-2 rounded-full shadow-md">
+                    <FaGithub size={24} />
                   </div>
                 </a>
               </div>

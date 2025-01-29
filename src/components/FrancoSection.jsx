@@ -2,7 +2,7 @@ import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const FrancoSection = () => (
-  <div className="p-6 ">
+  <div className="p-6 w-fit">
     <h1 className="text-4xl md:text-5xl font-extrabold md:text-left">
       <span className="text-[#D946EF]">FRANCO</span> <span className="text-[#22D3EE]">ECHEVERRIA</span>
     </h1>
