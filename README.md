@@ -1,8 +1,21 @@
-# React + Vite
+## Acerca de mí
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Soy desarrollador PHP con 5 años de experiencia profesional, apasionado por crear soluciones robustas y eficientes.
 
-Currently, two official plugins are available:
+Durante mi carrera, he tenido la oportunidad de trabajar tanto como full stack como backend developer, especializándome en tecnologías como
+**Laravel** y **ReactJS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Habilidades principales
+
+- **Backend**: PHP (5 años), Laravel (2 años), diseño y optimización de APIs RESTful.
+- **Frontend**: ReactJS (2 años), integrando interfaces dinámicas y optimizadas para aplicaciones Laravel.
+- **Bases de datos**: MySQL y PostgreSQL, experiencia en diseño, modelado y optimización de consultas complejas.
+- **DevOps**: Experiencia con despliegue en servidores Nginx y configuraciones en entornos de producción.
+- **Metodologías de trabajo**: Metodologías ágiles (Scrum, Kanban).
+
+## Algunos proyectos destacados
+
+- Desarrollo de sistemas de monitoreo en tiempo real para videovigilancia, integrados con datos geolocalizados.
+- Implementación de CRMs personalizados, con funcionalidades de análisis de datos y dashboards interactivos.
+- Integración de APIs para aplicaciones orientadas a la gestión financiera y seguimiento de presupuestos.
+- Simulación de sistemas interactivos (como torneos deportivos y juegos educativos).
